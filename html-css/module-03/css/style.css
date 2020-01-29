@@ -154,6 +154,11 @@ img{
     cursor: pointer;
 }
 
+.button:hover,
+.button:focus{
+    color: #03a9f4;
+}
+
 .visualy-hidden:not(:focus):not(:active),
 input[type="checkbox"].visualy-hidden,
 input[type="radio"].visualy-hidden{
