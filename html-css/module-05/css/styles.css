@@ -117,6 +117,11 @@ img{
     background-repeat: no-repeat;
 }
 
+.slider button:hover,
+.slider button:focus{
+    opacity: 1;
+}
+
 .slider .prev{
     top: 50%;
     left: 0px;
