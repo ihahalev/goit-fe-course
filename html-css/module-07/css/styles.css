@@ -45,3 +45,251 @@
          url('../fonts/spectral-v6-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/spectral-v6-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
+
+  html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+/* *{
+    outline: 1px solid red;
+} */
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    /* object-fit: none; */
+}
+
+.conteiner{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+/*navigation*/
+
+.page-nav{
+    padding: 0px 0px;
+    padding-top: 42px;
+    min-height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: "Oleo Script", serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #fed136;
+    text-decoration: none;
+}
+
+.menu{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: #222222;;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.menu li:hover a,
+.menu li:focus a{
+    color: #fed136;
+}
+
+.service, .contact{
+    padding-top: 112px;
+    padding-bottom: 120px;
+    /* letter-spacing: -0.025em; */
+}
+
+/* preheader and header */
+
+.header{
+    font-size: 40px;
+    line-height: 75px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 4px;
+    padding: 0px;
+    letter-spacing: -1px;
+}
+
+.pheader{
+    font-family: 'Spectral', serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 80px;
+    padding: 0px;
+    color: #777777;
+}
+
+/* services */
+
+.service .header{
+    color: #222222;
+}
+
+.serv__list{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+
+.serv__list-item{
+    width: 290px;
+    text-align: center;
+}
+
+.serv__list-item:not(:nth-last-child(-n+3)){
+    margin-bottom: 80px;
+}
+
+.serv__list-item::before{
+    content: "";
+    display: block;
+    height: 72px;
+    width: 72px;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    margin: 0px auto;
+    padding: 0px;
+    flex-shrink: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.serv__list-item:nth-child(1)::before{
+    background-image: url(../img/Icon-Basket.png);
+}
+
+.serv__list-item:nth-child(2)::before{
+    background-image: url(../img/Icon-Laptop.png);
+}
+
+.serv__list-item:nth-child(3)::before{
+    background-image: url(../img/Icon-Locked.png);
+}
+
+/* contact */
+
+.contact{
+    background-color: #222222;
+    background-image: url(../img/Map.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.contact .header{
+    color: #ffffff;
+}
+
+form{
+    font-size: 0px;
+}
+form div{
+    display: inline-block;
+    width: 456px;
+}
+
+.left-side{
+    margin-right: 28px;
+}
+
+.right-side{
+    height: 100%;
+}
+
+.right-side .form-list{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-list{
+    list-style: none;
+    margin: 0px;
+    padding: 0px; 
+    font-size: 14px;
+}
+
+.form-item input{
+    margin-bottom: 28px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 2px;
+    width: 459px;
+    height: 54px;
+    background-color: rgb(255, 255, 255);
+    color: #bbbbbb;
+    text-transform: uppercase;
+    padding-left: 14px;
+}
+
+
+
+form button {
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(254, 209, 54);
+    width: 240px;
+    height: 66px;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+/*general end fixes*/
+.clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.visualy-hidden:not(:focus):not(:active),
+input[type="checkbox"].visualy-hidden,
+input[type="radio"].visualy-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
