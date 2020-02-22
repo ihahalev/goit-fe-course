@@ -305,6 +305,7 @@ img{
     height: 56px;
     background-color: transparent;
     opacity: 0;
+    visibility: hidden;
     display: flex;
     justify-content: space-between;     
     transition-property:
@@ -327,6 +328,7 @@ img{
 .team__list-item:hover .dark,
 .team__list-item:focus .dark{
     opacity: 1;
+    visibility: visible;
 }
 
 .dark button{
@@ -413,6 +415,7 @@ input[type="submit"]{
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .visualy-hidden:not(:focus):not(:active),
