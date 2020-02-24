@@ -230,15 +230,8 @@ form{
     justify-content: space-between;
 }
 
-.left-side{
+.form-list.form-item:not(:last-child){
     margin-right: 28px;
-}
-
-.right-side{
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    
 }
 
 .form-list{
@@ -246,6 +239,9 @@ form{
     margin: 0px;
     margin-bottom: 28px;
     padding: 0px; 
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-item:not(:last-child){
@@ -292,11 +288,11 @@ textarea::placeholder{
     color: #bbbbbb;
 }
 
-.right-side .form-item{
+.form-item{
     flex: 0 0 54px;
 }
 
-.right-side .flexing{
+.flexing{
     flex: 1 0 54px
 }
 
