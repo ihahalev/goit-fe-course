@@ -35,6 +35,10 @@
          url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+:root{
+    --column-count: 1;
+}
+
 html{
     box-sizing: border-box;
 }
@@ -76,7 +80,6 @@ img{
 header {
     margin: 0px;
     padding: 0px;
-    padding-bottom: 94px;
     background-image: url(../img/promo_320.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -124,12 +127,13 @@ header {
 
 .share{
     padding: 16px 0px;
+    padding-bottom: 110px;
 }
 
 .share h2{
     margin: 0px auto;
     padding: 0px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     text-align: center;
     color: #ffffff;
     font-size: 30px;
@@ -187,10 +191,6 @@ header {
 .list-item{
     width: 218px;
     margin: 0 auto;
-}
-
-.list-item:not(:nth-last-child(-n+1)){
-    margin-bottom: 24px;
 }
 
 .icon{
