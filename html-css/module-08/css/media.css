@@ -13,7 +13,8 @@
     
     /*navigation*/
     header{
-        background-image: url(../img/promo_768.jpg);
+        background-image: url(../img/promo_940.jpg);
+
     }
 
     .page-nav{
@@ -86,9 +87,9 @@
     }
 
     /*navigation*/
-    header{
+    /* header{
         background-image: url(../img/promo_940.jpg);
-    }
+    } */
 
     .page-nav{
         padding-left: 0px;
