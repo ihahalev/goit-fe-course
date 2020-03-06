@@ -1,0 +1,88 @@
+@media (max-width: 767px) {
+
+  .list-item:not(:nth-last-child(-n+1)) {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  /*navigation*/
+  .header {
+    background-image: url(../img/promo_940.jpg);
+
+  }
+
+  .page-nav {
+    padding: 40px 40px;
+
+  }
+
+  .menu {
+    padding-bottom: 0px;
+  }
+
+  /* share */
+
+  .share {
+    padding-top: 110px;
+    padding-bottom: 202px;
+  }
+
+  .share h2 {
+    font-size: 52px;
+    /* width: 530px; */
+
+    margin-bottom: 40px;
+  }
+
+  .share p {
+    font-size: 24px;
+    /* width: 500px; */
+    margin: 0px;
+    margin-bottom: 36px;
+    padding: 0px;
+  }
+
+  /* friends */
+
+  .friend {
+    padding-bottom: 40px;
+  }
+
+  .friend__list {
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+
+  .list-item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: 960px) {
+
+  /*navigation*/
+  /* header{
+        background-image: url(../img/promo_940.jpg);
+    } */
+
+  .page-nav {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .friend__list {
+    margin-bottom: 72px;
+  }
+/* 
+  .friend__list {
+    width: auto;
+  } */
+
+  .list-item:not(:nth-last-child(-n+4)) {
+    margin-bottom: 54px;
+  }
+}

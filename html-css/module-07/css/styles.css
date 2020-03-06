@@ -300,15 +300,13 @@ textarea::placeholder{
     border: 1px solid rgb(87, 199, 243);    
 }
 
-input[name="name"]:valid,
-input[name="email"]:valid,
-textarea[name="message"]:valid{
+input:required:focus:valid:not(:placeholder-shown),
+textarea:required:focus:valid:not(:placeholder-shown){
     outline: 2px solid green;
 }
 
-input[name="name"]:invalid,
-input[name="email"]:invalid,
-textarea[name="message"]:invalid{
+input:required:focus:invalid:not(:placeholder-shown),
+textarea:required:focus:invalid:not(:placeholder-shown){
     outline: 2px solid red;
 }
 
