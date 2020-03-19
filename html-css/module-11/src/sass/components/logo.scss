@@ -1,0 +1,20 @@
+.logo{
+  @extend %link;
+  font-size: 30px;
+  font-weight: 700;
+  color: $header-font-color;
+  min-height: 40px;
+  border-bottom: 3px solid transparent;
+  transition-property:
+      color,
+      border-bottom;
+          transition-duration: 0.2s;
+          transition-timing-function: linear;
+
+  &:hover,
+  &:focus{
+    color: $header-accent-color;
+    border-bottom: 3px solid $header-accent-color;
+  }
+}
+

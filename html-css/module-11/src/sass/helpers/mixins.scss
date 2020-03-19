@@ -1,0 +1,9 @@
+@mixin font-setting($size, $height){
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin pseudo($display: inline-block, $content: ''){
+  display: $display;
+  content: $content;
+}

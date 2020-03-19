@@ -1,0 +1,41 @@
+.form{
+  display: flex;
+}
+
+.form__email{
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid $border-color;
+}
+
+.form__email, .form__email::placeholder{
+  padding-left: 12px;
+  width: 230px;
+  height: 40px;
+
+  background-color: $primari-bg-color;
+  font-family: $text-font-stack;  
+  font-weight: 300;
+  font-style: italic; 
+  font-size: 15px;
+  line-height: 24px;
+  color: $input-color;
+}
+
+input:required:focus:valid:not(:placeholder-shown){
+  outline: 2px solid $input-ok-color;
+}
+
+input:required:focus:invalid:not(:placeholder-shown){
+  outline: 2px solid $input-error-color;
+}
+
+.form__submit{
+  @extend %button;
+  width: 150px;
+  height: 40px;
+  background-color: $secondary-bg-color;
+  font-weight: 700;
+  color: $header-font-color;
+  text-transform: uppercase;
+}

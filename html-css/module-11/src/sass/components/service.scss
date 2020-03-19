@@ -1,0 +1,73 @@
+.service{
+  padding-top: 52px;
+
+  &__list{
+    padding-top: 16px;
+    // font-size: 14px;
+        justify-content: space-around;  
+  }
+
+  &__item{
+    width: 380px;
+    display: flex;
+  }
+
+  &__item:not(:nth-last-child(-n+3)){
+    margin-bottom: 98px;
+  }
+
+  &__item-title{
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 14px;
+    padding: 0px;
+  }
+
+  &__item-text{
+    margin: 0px;
+    padding: 0px;
+    color: $secondary-font-color;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: $text-font-stack;
+  }
+}
+
+.service__icon{
+  &::before{
+    @include pseudo($display: block);
+    height: 32px;
+    width: 72px;
+    margin: 0px;
+    margin-right: 10px;
+    padding: 0px;
+        flex-shrink: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+}
+
+.service__icon--alarm::before{
+  background-image: url("../images/services/ALARM.svg");
+}
+
+.service__icon--graph::before{
+  background-image: url("../images/services/GRAPH.svg");
+}
+
+.service__icon--computer::before{
+  background-image: url("../images/services/COMPUTER.svg");
+}
+
+.service__icon--book::before{
+  background-image: url("../images/services/BOOK.svg");
+}
+
+.service__icon--home::before{
+  background-image: url("../images/services/HOME.svg");
+}
+
+.service__icon--image::before{
+  background-image: url("../images/services/IMAGE.svg");
+}

@@ -1,0 +1,49 @@
+.section{
+  padding-bottom: 80px;
+
+  &__text{
+    font-family: $secondary-font-stack;
+    font-size: 24px;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+
+  &__title{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 40px;
+    padding: 0px;
+  }
+
+  &__title::after{
+    display: block;
+    margin: 0px auto;
+    margin-top: 40px;
+    content: '';
+    height: 3px;
+    width: 60px;
+    background-color: $secondary-accent-color;
+  }
+
+  &__description{
+    margin: 0px;
+    margin-bottom: 90px;
+    padding: 0px;
+    text-align: center;
+    color: $secondary-font-color;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: $text-font-stack;
+  }
+
+  &__list{
+    @extend %list;
+    display: flex;
+        flex-wrap: wrap;
+  }
+}
