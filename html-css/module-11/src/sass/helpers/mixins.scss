@@ -11,7 +11,7 @@
 @mixin gen-icons($base, $list, $item, $path, $ext){
   @each $ic in $list{
     #{$base}#{$ic}#{$item}{
-      background-image: url(#{$path}#{$ic}.#{$ext});
+      background-image: url("#{$path}#{$ic}.#{$ext}");
     }
   }
 }
