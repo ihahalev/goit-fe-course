@@ -46,28 +46,7 @@
     background-repeat: no-repeat;
   }
 
-}
+  $icons: alarm, graph, computer, book, home, image;
+  @include gen-icons('&--', $icons, '::before', '../images/services/', 'svg');
 
-.service__icon--alarm::before{
-  background-image: url("../images/services/ALARM.svg");
-}
-
-.service__icon--graph::before{
-  background-image: url("../images/services/GRAPH.svg");
-}
-
-.service__icon--computer::before{
-  background-image: url("../images/services/COMPUTER.svg");
-}
-
-.service__icon--book::before{
-  background-image: url("../images/services/BOOK.svg");
-}
-
-.service__icon--home::before{
-  background-image: url("../images/services/HOME.svg");
-}
-
-.service__icon--image::before{
-  background-image: url("../images/services/IMAGE.svg");
 }
